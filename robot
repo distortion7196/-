@@ -1,6 +1,6 @@
 package com.company;
 
-public class sdacha {
+public class Main {
 	 
 	    public enum Direction {
 	        UP,
@@ -72,7 +72,8 @@ public class sdacha {
 	            }
 	        }
 	 
-	        public void moveRobot(Robot robot, int toX, int toY) {
+	        @SuppressWarnings("unused")
+			public void moveRobot(Robot robot, int toX, int toY) {
 	            if (robot.getX() > toX) {
 	                while (robot.getDirection() != Direction.LEFT) {
 	                    robot.turnRight();
