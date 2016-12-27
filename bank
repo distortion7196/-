@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class bank {
+	public static void main(String []args){
+	        Scanner scan = new Scanner(System.in);
+	        int x = scan.nextInt();
+	        int p = scan.nextInt();
+	        int y = scan.nextInt();
+	        int year = 0;
+	        while (x < y){
+	            x *= (1 + p/100.0);
+	            x *= 100;
+	            x = (int) x;
+	            x /= 100;
+	            year++;
+	        }  
+	        System.out.println(year);
+	    }
+}
