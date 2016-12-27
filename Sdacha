@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class sdacha {
+	public static void main(String []args){
+			Scanner scan = new Scanner(System.in);
+	        int a = scan.nextInt();
+	        int b = scan.nextInt();
+	        int c = scan.nextInt();
+	        int d = scan.nextInt();
+	        int e = c - a;
+	        int f = d - b;
+	        if (f < 0){
+	            f += 100;
+	            e--;
+	        }
+	        System.out.println(e + " " + f);
+	}
+}
